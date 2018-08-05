@@ -1,0 +1,50 @@
+package SparkSQL
+
+import org.apache.spark.sql.{DataFrame, SparkSession}
+
+object report1 extends {
+
+  def main(args: Array[String]) {
+
+    import org.apache.log4j.{Level, Logger}
+    Logger.getLogger("org").setLevel(Level.OFF)
+    Logger.getLogger("akka").setLevel(Level.OFF)
+
+
+    val spark = SparkSession
+      .builder()
+      .appName("Spark SQL basic example")
+      .config("spark.master", "local")
+      .config("spark.executor.memory", "1g")
+      .config("spark.sql.warehouse.dir", "c:/files")
+      .getOrCreate()
+
+    val transDF = spark.read.format("csv")
+              .option("header", "true")
+              .csv("C:\\Users\\Sandhya\\Desktop\\Data1\\trans123.csv")
+    transDF.createOrReplaceTempView("transactions")
+    transDF.show(2)
+
+    val incenDF = spark.read.format("csv")
+      .option("header", "true")
+      .csv("C:\\Users\\Sandhya\\Desktop\\Data1\\incentives.csv")
+    incenDF.createOrReplaceTempView("incentives")
+    incenDF.show(2)
+
+    val inUPCDF = spark.read.format("csv")
+      .option("header", "true")
+      .csv("C:\\Users\\Sandhya\\Desktop\\Data1\\incentive_upc.csv")
+    inUPCDF.createOrReplaceTempView("upc")
+    inUPCDF.show(2)
+
+    spark.sql("select distinct UPC_CODE as Product_Id,min(ACTIVE_DATE) as Act_Date,max(EXPIRE_DATE) as exp_date" +
+      " from (select * from upc u left outer join incentives i on (u.INCENTIVE_ID = i.INCENTIVE_ID))" +
+          "Group by UPC_CODE").createOrReplaceTempView("ProdDates")
+
+    spark.sql("select t.CLIENTID,t.DATE,t.BASKET_ID,t.PRODUCT_ID,t.QUANTITY,p.Act_Date,p.exp_date" +
+      " from transactions t left outer join ProdDates p on t.PRODUCT_ID = p.Product_Id")
+      .write.format("csv").option("header","true").csv("C:\\Users\\Sandhya\\Desktop\\Data1\\final3.csv")
+
+
+  }
+}

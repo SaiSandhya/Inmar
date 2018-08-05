@@ -1,0 +1,99 @@
+package SparkSQL
+
+import org.apache.spark.sql.{DataFrame, SparkSession}
+import java.sql.Date
+import org.apache.spark.sql.types.{DateType, IntegerType}
+import org.apache.spark.sql.functions._
+import org.apache.spark.sql.functions.{lit, max, row_number}
+
+object report1 extends {
+
+  def main(args: Array[String]) {
+
+    import org.apache.log4j.{Level, Logger}
+    Logger.getLogger("org").setLevel(Level.OFF)
+    Logger.getLogger("akka").setLevel(Level.OFF)
+
+    val spark = SparkSession
+      .builder()
+      .appName("Spark SQL basic example")
+      .config("spark.master", "local")
+      .config("spark.executor.memory", "1g")
+      .config("spark.sql.warehouse.dir", "c:/files")
+        .config("spark.sql.crossJoin.enabled", "true")
+      .getOrCreate()
+
+    import spark.implicits._
+//    val transDF = spark.read.format("csv")
+//              .option("header", "true")
+//              .csv("C:\\Users\\Sandhya\\Desktop\\Data1\\trans123.csv")
+//    transDF.createOrReplaceTempView("transactions")
+//    transDF.show(2)
+
+//    val incenDF = spark.read.format("csv")
+//      .option("header", "true")
+//      .csv("C:\\Users\\Sandhya\\Desktop\\Data1\\incentives.csv")
+//    incenDF.createOrReplaceTempView("incentives")
+//    incenDF.show(2)
+//
+//    val inUPCDF = spark.read.format("csv")
+//      .option("header", "true")
+//      .csv("C:\\Users\\Sandhya\\Desktop\\Data1\\incentive_upc.csv")
+//    inUPCDF.createOrReplaceTempView("upc")
+//    inUPCDF.show(2)
+//
+//    spark.sql("select distinct UPC_CODE as Product_Id,min(ACTIVE_DATE) as Act_Date,max(EXPIRE_DATE) as exp_date" +
+//      " from (select * from upc u left outer join incentives i on (u.INCENTIVE_ID = i.INCENTIVE_ID))" +
+//          "Group by UPC_CODE").createOrReplaceTempView("ProdDates")
+//
+//    spark.sql("select t.CLIENTID,t.DATE,t.BASKET_ID,t.PRODUCT_ID,t.QUANTITY,p.Act_Date,p.exp_date" +
+//      " from transactions t left outer join ProdDates p on t.PRODUCT_ID = p.Product_Id").coalesce(1)
+//      .write.format("csv").option("header","true").csv("C:\\Users\\Sandhya\\Desktop\\Data1\\final4.csv")
+
+
+
+//Datetime conversion and min max date extraction
+
+
+    val finalDF = spark.read.format("csv")
+      .option("header", "true")
+      .csv("C:\\Users\\Sandhya\\Desktop\\Data1\\final4.csv")
+
+    val finalDF1 = finalDF.withColumn("Activation_Dt", to_date(unix_timestamp($"Act_date", "M/dd/yyyy").cast("timestamp")))
+        .withColumn("Expiry_Dt", to_date(unix_timestamp($"exp_date", "M/dd/yyyy").cast("timestamp")))//.where("BASKET_ID == 201612000200090984")
+
+    val dates = finalDF1.groupBy("CLIENTID")
+     .agg(min("Activation_Dt"),max("Expiry_Dt"))
+     .select("min(Activation_Dt)","max(Expiry_Dt)").distinct()
+     //.where("`min(Activation_Dt)` <> null")
+     .withColumnRenamed("min(Activation_Dt)","Min_Act_Dt").withColumnRenamed("max(Expiry_Dt)","Max_Exp_Dt")
+
+    finalDF1.join(dates).createOrReplaceTempView("final")
+
+    //spark.sql("select CLIENTID,DATE,BASKET_ID,PRODUCT_ID,QUANTITY, date-Min_Act_Dt as x, date-Max_Exp_Dt as y").show()
+
+     val finalDF2 = spark.sql("select CLIENTID,DATE,BASKET_ID,PRODUCT_ID,QUANTITY, Min_Act_Dt, max_Exp_Dt," +
+      "datediff(to_date(DATE), to_date(Min_Act_Dt))/30 as diff1," +
+      "datediff(to_date(DATE), to_date(max_Exp_Dt))/30 as diff2," +
+      " case when (datediff(to_date(DATE), to_date(Min_Act_Dt))/30)>=-6 and (datediff(to_date(DATE), to_date(Min_Act_Dt))/30) <0 " +
+      "then 1 else 0 end as prior," +
+      "case when (datediff(to_date(DATE), to_date(Max_Exp_Dt))/30) >0 and (datediff(to_date(DATE), to_date(max_Exp_Dt))/30) <=6  " +
+       "then 1 else 0 end as Post," +
+      "case when DATE>= Min_Act_Dt and DATE <= Max_Exp_Dt then 1 else 0 end betw" +
+      " from final")
+
+// For generating counts
+
+    finalDF2.createOrReplaceTempView("final1")
+
+    spark.sql("select Final.ClientID, Final.ProductID, Sum(Final.prQ) as Sum_Prior_Quantity, " +
+      "Sum(Final.poQ) as Sum_Post_Quantity , Sum(Final.beQ) as Sum_Betw_Quantity from " +
+      "(Select CLIENTID as ClientID,PRODUCT_ID as ProductID,QUANTITY as Quantity,prior,post,betw," +
+      "case when prior =1 then QUANTITY else 0 end as prQ," +
+      "case when post =1 then QUANTITY else 0 end as poQ, " +
+      "case when betw =1 then QUANTITY else 0 end as beQ from final1) Final " +
+      "group by Final.ClientID, damnFinal.ProductID").coalesce(1)
+      .write.format("csv").option("header","true").csv("C:\\Users\\Sandhya\\Desktop\\Data1\\FINAL.csv")
+
+    }
+}
