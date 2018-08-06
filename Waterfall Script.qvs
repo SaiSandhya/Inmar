@@ -1,0 +1,192 @@
+﻿///$tab Main
+SET ThousandSep=',';
+SET DecimalSep='.';
+SET MoneyThousandSep=',';
+SET MoneyDecimalSep='.';
+SET MoneyFormat='$#,##0.00;($#,##0.00)';
+SET TimeFormat='h:mm:ss TT';
+SET DateFormat='M/D/YYYY';
+SET TimestampFormat='M/D/YYYY h:mm:ss[.fff] TT';
+SET MonthNames='January;February;March;April;May;Jun;July;August;September;October;November;December';
+SET DayNames='Mon;Tue;Wed;Thu;Fri;Sat;Sun';
+SET LongMonthNames='January;February;March;April;May;June;July;August;September;October;November;December';
+SET LongDayNames='Monday;Tuesday;Wednesday;Thursday;Friday;Saturday;Sunday';
+SET FirstWeekDay=6;
+SET BrokenWeeks=1;
+SET ReferenceDay=0;
+SET FirstMonthOfYear=1;
+SET CollationLocale='en-US';
+
+///$tab Main 2
+CUST_INCENT:
+LOAD consumer_incentive_id, 
+     consumer_id_id, 
+     consumer_id_id as [Activated User],
+     incentive_id, 
+     status, 
+     value, 
+     selection_date, 
+     redeem_count, 
+     redeem_date, 
+     //retailer_id, 
+     withdrawn_datetime, 
+     redeemable_start_date, 
+     redeemable_end_date, 
+     site_id, 
+     dynamic_display_start_date, 
+     dynamic_display_end_date, 
+     incentive_clip_type_id, 
+     redeemer_consumer_id_id, 
+     media_property_id, 
+     clip_timestamp, 
+     created_by, 
+     created_source, 
+     created_timestamp, 
+     updated_by, 
+     updated_source, 
+     updated_timestamp, 
+     clientid, 
+     transyear, 
+     transmonth, 
+     MonthName(MakeDate(transyear,transmonth)) as [Activation Month],
+     rk
+FROM
+consumer_incentive_1.csv
+(txt, codepage is 1252, embedded labels, delimiter is ',', msq);
+
+Concatenate (CUST_INCENT)
+LOAD consumer_incentive_id, 
+     consumer_id_id, 
+     consumer_id_id as [Activated User],
+     incentive_id, 
+     status, 
+     value, 
+     selection_date, 
+     redeem_count, 
+     redeem_date, 
+     //retailer_id, 
+     withdrawn_datetime, 
+     redeemable_start_date, 
+     redeemable_end_date, 
+     site_id, 
+     dynamic_display_start_date, 
+     dynamic_display_end_date, 
+     incentive_clip_type_id, 
+     redeemer_consumer_id_id, 
+     media_property_id, 
+     clip_timestamp, 
+     created_by, 
+     created_source, 
+     created_timestamp, 
+     updated_by, 
+     updated_source, 
+     updated_timestamp, 
+     clientid, 
+     transyear, 
+     transmonth, 
+     MonthName(MakeDate(transyear,transmonth)) as [Activation Month],     
+     rk
+FROM
+Consumer_Incentive_2.csv
+(txt, codepage is 1252, embedded labels, delimiter is ',', msq);
+
+Concatenate(CUST_INCENT)
+LOAD consumer_incentive_id, 
+     consumer_id_id, 
+     consumer_id_id as [Activated User],     
+     incentive_id, 
+     status, 
+     value, 
+     selection_date, 
+     redeem_count, 
+     redeem_date, 
+     //retailer_id, 
+     withdrawn_datetime, 
+     redeemable_start_date, 
+     redeemable_end_date, 
+     site_id, 
+     dynamic_display_start_date, 
+     dynamic_display_end_date, 
+     incentive_clip_type_id, 
+     redeemer_consumer_id_id, 
+     media_property_id, 
+     clip_timestamp, 
+     created_by, 
+     created_source, 
+     created_timestamp, 
+     updated_by, 
+     updated_source, 
+     updated_timestamp, 
+     clientid, 
+     transyear, 
+     transmonth,
+     MonthName(MakeDate(transyear,transmonth)) as [Activation Month]     
+FROM
+Consumer_Incentive_3.csv
+(txt, codepage is 1252, embedded labels, delimiter is '|', msq);
+///$tab Main 3
+LET vPrv12Months = Num(AddMonths(MonthStart(Today()),-12));
+
+AUTH_USER:
+LOAD id as consumer_id, 
+     username, 
+     first_name, 
+     last_name, 
+     email, 
+     password, 
+     is_staff, 
+     is_active, 
+     is_superuser, 
+     last_login, 
+     date_joined,
+     MonthName(date_joined) as [Registration Month],
+     If(Num(Floor(date_joined))>=$(vPrv12Months),1,0) as Prv12MNTHFlag 
+     //clientid
+FROM
+auth_user.csv
+(txt, codepage is 1252, embedded labels, delimiter is ',', msq);
+
+
+Consumer:
+LOAD consumer_id_id, 
+     consumer_id, 
+     creation_timestamp, 
+     creation_source_id, 
+     consumer_id_type, 
+     value as ConsmerValue, 
+     extended_value, 
+     pin, 
+     retailer_id, 
+     login_id, 
+     updated_timestamp as Consumer_Update_Timestamp
+     //clientid
+FROM
+consumer_id.csv
+(txt, codepage is 1252, embedded labels, delimiter is '|', msq);
+
+Retailer:
+LOAD retailer_id, 
+     contact_id, 
+     retailer_party_id, 
+     description, 
+     slogan, 
+     logo, 
+     external_retailer_id, 
+     abbreviation, 
+     account, 
+     inmar_pos_flag, 
+     pos_system, 
+     inmar_registration_flag, 
+     registration_system, 
+     house_holding_ind, 
+     private_label_pgm_ind, 
+     default_password, 
+     live_ind, 
+     primary_loyalty_type_id, 
+     inmar_managed_flag, 
+     consumer_metadata_ind, 
+     targeted_offer_ind
+FROM
+Retailer.csv
+(txt, codepage is 1252, embedded labels, delimiter is '|', msq);
+

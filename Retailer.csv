@@ -1,0 +1,305 @@
+retailer_id,contact_id,retailer_party_id,description,slogan,logo,external_retailer_id,abbreviation,account,inmar_pos_flag,pos_system,inmar_registration_flag,registration_system,house_holding_ind,private_label_pgm_ind,default_password,live_ind,primary_loyalty_type_id,inmar_managed_flag,consumer_metadata_ind,targeted_offer_ind
+1,1,35,Hiller's,,,,hillers,,Y,,Y,,N,N,hillers,N,1,N,N,N
+2,232,37,Weis Markets,,,,weis,,Y,,Y,,Y,Y,weis,Y,2,Y,N,N
+3,233,39,SuperValu,,,,supervalu,,Y,,Y,,N,N,supervalu,N,2,N,N,N
+4,25,41,Wagners,,,,wagners,,Y,,Y,,N,N,wagners,N,2,N,N,N
+5,26,43,Brookville,,,,brookville,,Y,,Y,,N,N,brookville,N,2,N,N,N
+6,27,45,Deca,,,,deca,,Y,,Y,,N,N,deca,Y,2,Y,N,N
+7,222,47,Mackenthuns,,,,mackenthuns,,Y,,N,,N,N,mackenthuns,N,2,N,N,N
+8,223,49,Fishers Foods,,,,fisherfoods,,N,ScanMaster,N,,Y,N,fisherfoods,N,2,Y,N,N
+10,237,51,Publix,,,,publix,,Y,,Y,,N,N,publix,Y,1,Y,N,N
+11,11537,355,BigZPhone,,,,bigzphone,,Y,,Y,,Y,N,UNKnown,Y,1,Y,N,N
+12,14,53,BigZFoods,,,,bigzfoods,,Y,,Y,,N,Y,bigzfoods,Y,2,Y,N,N
+13,260,55,Tops,,,,tops,,Y,,N,,Y,Y,tops,Y,2,Y,N,N
+16,397,57,Rite Aid,,,,riteaid,,N,,N,,N,N,riteaid,Y,2,Y,N,N
+17,7809,59,BigY,,,,bigy,,Y,,Y,,N,N,bigy,Y,2,N,N,N
+18,7820,61,Walmart,,,,walmart,,Y,,Y,,N,N,walmart,N,2,N,N,N
+19,7827,69,A&P,,,,a_and_p,,N,,N,,N,N,,N,2,N,N,N
+20,7831,73,Bartell Drugs,,,,bartell,,N,,N,,N,N,,N,2,N,N,N
+21,7833,75,Basha's,,,,bashas,,N,,N,,N,N,,Y,2,N,N,N
+22,7835,77,Best Cellars,,,,bestcellars,,N,,N,,N,N,,N,2,N,N,N
+23,7837,79,Bi-Lo,,,,bilo,,N,,N,,N,N,,N,2,N,N,N
+24,7839,81,Brookshire Brothers,,,,brookshire,,N,,N,,N,N,,N,2,N,N,N
+25,7841,83,Butcher and Farmer Market,,,,butchermkt,,N,,N,,N,N,,N,2,N,N,N
+26,7843,85,Carrs,,,,carrs,,N,,N,,N,N,,N,2,N,N,N
+27,7847,89,Community Markets,,,,communitymkt,,N,,N,,N,N,,N,2,N,N,N
+28,7849,91,Country Mart,,,,countrymkt,,N,,N,,N,N,,N,2,N,N,N
+29,7851,93,D&W Fresh Market,,,,d_and_w,,N,,N,,N,N,,N,2,N,N,N
+30,7853,95,D'Agostinos,,,,dagostinos,,N,,N,,N,N,,N,2,N,N,N
+31,7857,99,Discount Drug Mart,,,,drugmart,,Y,,Y,,N,Y,,Y,2,Y,N,N
+32,7861,103,Family Fare Supermarkets,,,,familyfare,,N,,N,,N,N,,N,2,N,N,N
+33,7863,105,Fareway,,,,fareway,,N,,N,,N,N,,N,2,N,N,N
+34,7865,107,Farmfresh Supermarkets,,,,farmfresh,,N,,N,,N,N,,N,2,N,N,N
+35,7869,111,Food Basics,,,,foodbasics,,N,,N,,N,N,,N,2,N,N,N
+36,7871,113,Food Fair,,,,foodfair,,N,,N,,N,N,,N,2,N,N,N
+37,7873,115,Food Town,,,,foodtown,,N,,N,,N,N,,N,2,N,N,N
+38,7875,117,Food Lion,,,,foodlion,,N,,N,,N,N,,N,2,N,N,N
+39,7881,123,Genuardi's,,,,genuardis,,N,,N,,N,N,,N,2,N,N,N
+40,7885,127,GetGo,,,,getgo,,N,,N,,N,N,,N,2,N,N,N
+41,7887,129,Giant Eagle,,,,gianteagle,,N,,N,,N,N,,N,2,N,N,N
+42,7889,131,Giant Eagle Express,,,,gianteagleexpress,,N,,N,,N,N,,N,2,N,N,N
+43,7891,133,Glen's Fresh Market,,,,glensfreshmkt,,N,,N,,N,N,,N,2,N,N,N
+44,7893,135,Glen's Markets,,,,glensmarkets,,N,,N,,N,N,,N,2,N,N,N
+45,7895,137,Grand Market,,,,grandmkt,,N,,N,,N,N,,N,2,N,N,N
+46,7897,139,Greer's,,,,greers,,N,,N,,N,N,,N,2,N,N,N
+47,7899,141,Haggen,,,,haggen,,N,,N,,N,N,,N,2,N,N,N
+48,7901,143,Harp's,,,,harps,,N,,N,,N,N,,Y,2,N,N,N
+49,7903,145,Harris Teeter,,,,harristeeter,,N,,N,,N,N,,Y,2,N,N,N
+50,7905,147,Houchens Markets,,,,houchens,,N,,N,,N,N,,N,2,N,N,N
+51,7907,149,Ingles Markets,,,,ingles,,N,,N,,N,N,,N,2,N,N,N
+52,7909,151,J&J Foods,,,,j_and_jfoods,,N,,N,,N,N,,N,2,N,N,N
+53,7917,159,Kroger,,,,kroger,,N,,N,,N,N,,Y,2,N,N,N
+54,7919,161,Leppinks Food Centers,,,,leppinks,,N,,N,,N,N,,N,2,N,N,N
+55,7921,163,Lowe's Foods,,,,lowesfoods,,N,,N,,N,N,,N,2,N,N,N
+56,7923,165,Lucky,,,,lucky,,N,,N,,N,N,,N,2,N,N,N
+57,7925,167,Marc's,,,,marcs,,N,,N,,N,N,,N,2,N,N,N
+58,7927,169,Giant Eagle Market District,,,,marketdistrict,,N,,N,,N,N,,N,2,N,N,N
+59,7929,171,Marsh,,,,marsh,,N,,N,,N,N,,N,2,N,N,N
+60,7931,173,Meijer,,,,meijer,,N,,N,,N,N,,Y,2,N,N,N
+61,7933,175,Murfin's,,,,murfins,,N,,N,,N,N,,N,2,N,N,N
+63,7939,181,Pathmark,,,,pathmark,,N,,N,,N,N,,N,2,N,N,N
+64,7941,183,Paul's Supermarket,,,,pauls,,N,,N,,N,N,,N,2,N,N,N
+65,7945,187,Price Chopper - external,,,,pricechopper,,N,,N,,N,N,,N,2,N,N,N
+66,7951,193,Randalls,,,,randalls,,N,,N,,N,N,,N,2,N,N,N
+67,7953,195,Ray's Food Place,,,,raysfoodplace,,N,,N,,N,N,,N,2,N,N,N
+68,7955,197,Romulus Market Place,,,,romulusmkt,,N,,N,,N,N,,N,2,N,N,N
+69,7957,199,Safeway,,,,safeway,,N,,N,,N,N,,N,2,N,N,N
+70,7959,201,Savemart,,,,savemart,,N,,N,,N,N,,N,2,N,N,N
+71,7961,203,Shop 'n Save Foods,,,,shopnsave,,N,,N,,N,N,,N,2,N,N,N
+72,7963,205,Shop Smart,,,,shopsmart,,N,,N,,N,N,,N,2,N,N,N
+73,7965,207,ShopRite,,,,shoprite,,N,,N,,N,N,,Y,2,N,N,N
+74,7969,211,SuperFresh,,,,superfresh,,N,,N,,N,N,,N,2,N,N,N
+75,7971,213,Target,,,,target,,N,,N,,N,N,,N,2,N,N,N
+76,7973,215,The Food Emporium,,,,foodemporium,,N,,N,,N,N,,N,2,N,N,N
+77,7975,217,Times Supermarkets,,,,timessupermkt,,N,,N,,N,N,,N,2,N,N,N
+78,7977,219,Tom Thumb,,,,tomthumb,,N,,N,,N,N,,N,2,N,N,N
+79,7979,221,Valu Land,,,,valuland,,N,,N,,N,N,,N,2,N,N,N
+80,7981,223,VG's Fresh Market,,,,vgsfreshmkt,,N,,N,,N,N,,N,2,N,N,N
+81,7983,225,VG's Grocery,,,,vgsgrocery,,N,,N,,N,N,,N,2,N,N,N
+82,7985,227,Von's,,,,vons,,N,,N,,N,N,,N,2,N,N,N
+83,7987,229,Waldbaum's,,,,waldbaums,,N,,N,,N,N,,N,2,N,N,N
+84,7829,71,Bakers,,,,bakers,,N,,N,,N,N,,Y,2,N,N,N
+85,7845,87,City Market,,,,citymarket,,N,,N,,N,N,,Y,2,N,N,N
+86,7855,97,Dillon's,,,,dillons,,N,,N,,N,N,,Y,2,N,N,N
+87,7867,109,Food 4 Less,,,,food4less,,N,,N,,N,N,,Y,2,N,N,N
+88,7877,119,Fred Meyer,,,,fredmeyer,,N,,N,,N,N,,Y,2,N,N,N
+89,7879,121,Fry's Food Stores,,,,frysfoodstores,,N,,N,,N,N,,Y,2,N,N,N
+90,7883,125,Gerbes Super Markets,,,,gerbessupermkt,,N,,N,,N,N,,Y,2,N,N,N
+91,7911,153,Jay C Food Stores,,,,jaycfoodstores,,N,,N,,N,N,,Y,2,N,N,N
+92,7913,155,Just Save Foods,,,,justsavefoods,,N,,N,,N,N,,N,2,N,N,N
+93,7915,157,King Soopers,,,,kingsoopers,,N,,N,,N,N,,Y,2,N,N,N
+94,7943,185,Pay Less Supermarkets,,,,paylesssupermkt,,N,,N,,N,N,,Y,2,N,N,N
+95,7947,189,Quality Food Centers,,,,qfc,,N,,N,,N,N,,Y,2,N,N,N
+96,7949,191,Ralphs,,,,ralphs,,N,,N,,N,N,,Y,2,N,N,N
+97,7967,209,Smith's,,,,smiths,,N,,N,,N,N,,Y,2,N,N,N
+98,7937,179,Owen's Market,,,,owensmkt,,N,,N,,N,N,,Y,2,N,N,N
+99,7859,101,Dominick's,,,,dominicks,,N,,N,,N,N,,N,2,N,N,N
+100,8270,231,Food City,,,,foodcity,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+101,8271,233,Main St. Market,,,,main_st_mkt,,N,,N,,N,N,,N,2,N,N,N
+102,8273,235,Homeland,,,,homeland,,N,,N,,N,N,,N,2,N,N,N
+103,11247,263,Kmart (deprecated),,,,kmart,,N,,N,,N,N,,N,2,N,N,N
+104,11319,327,Stater Bros.,,,,staterbros,,N,,N,,N,N,,Y,2,N,N,N
+105,11321,329,H-E-B,,,,heb,,N,,N,,N,N,,N,2,N,N,N
+106,11323,331,Brookshire's Food and Pharmacy,,,,brookshiresfood,,N,,N,,N,N,,N,2,N,N,N
+107,11331,337,Spartan Stores,,,,spartan,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+108,11360,342,ri - Hillers Markets,,,,rihillers,,Y,,Y,,Y,N,UNKnown,N,2,Y,N,N
+109,11365,343,ri - SunFresh,,,,risunfresh,,Y,,Y,,Y,Y,UNKnown,N,2,Y,N,N
+110,11366,344,Hy-Vee,,,,hyvee,,Y,,Y,,Y,N,UNKnown,Y,2,Y,N,N
+111,11383,348,Fresh Encounter,,,,freshencounter,,N,,N,,N,N,,N,2,N,N,N
+112,11384,349,W Lee Flowers,,,,wleeflowers,,N,,N,,N,N,,N,2,N,N,N
+113,11385,350,Dollar General,,,,dollargeneral,,N,,N,,N,N,,Y,2,Y,N,N
+114,11386,351,8 Mile Food Land,,,,8milefoodland,,N,,N,,N,N,,N,2,N,N,N
+115,11538,356,ri - CVs,,,,ricvs,,Y,,Y,,Y,Y,UNKnown,N,2,Y,N,N
+116,12012,358,D'Agostino,,,,dagostino,,N,,N,,N,N,,N,2,N,N,N
+117,12011,357,Pavilions,,,,pavilions,,N,,N,,N,N,,N,2,N,N,N
+118,12013,359,NCR,,,,ncrconnectretailer,,Y,,Y,,N,N,UNKnown,N,2,N,N,N
+119,12019,360,ri - Budweys,,,,budweys,,Y,,Y,,Y,Y,UNKnown,N,2,Y,N,N
+121,12038,363,Lowes Foods,,,,lowesfds,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+122,12036,361,ri - Vashon Thriftway,,,,rivashons,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+123,12037,362,Wegmans,,,,wegmans,,Y,,Y,,Y,N,UNKnown,Y,2,Y,N,N
+124,12042,366,ri - Kittanning,,,,rikittanning,,Y,,Y,,Y,Y,UNKnown,N,2,Y,N,N
+125,12043,367,ri - Labonnes,,,,rilabonnes,,Y,,Y,,Y,Y,UNKnown,N,2,Y,N,N
+126,12044,368,Kmart,,,,kmartdpn,,N,,Y,,N,N,UNKnown,Y,2,Y,N,N
+127,12078,373,ri - Harmons,,,,riharmons,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+128,12080,375,Meijer,,,,meijerdpn,,Y,,Y,,N,N,UNKnown,N,2,N,N,N
+129,12081,376,7-Eleven,,,,seveneleven,,Y,,Y,,N,N,UNKnown,N,1,N,N,N
+130,12082,377,ri - BridleTrails,,,,ribridletrails,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+131,12083,378,ri - Cookes,,,,ricookes,,Y,,Y,,Y,Y,UNKnown,N,2,Y,N,N
+132,12084,380,ri - Potash,,,,ripotash,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+133,12085,381,ri - Windham,,,,riwindham,,Y,,Y,,Y,Y,UNKnown,N,2,Y,N,N
+134,12086,382,SafewayMCR,,,,safewaymcr,,N,,N,,N,N,UNKnown,N,2,Y,N,N
+135,12088,383,ri - Payless IGA,,,,ripayless,,Y,,Y,,Y,Y,UNKnown,Y,1,Y,N,N
+136,12127,384,ri - Adams Hometown Market,,,,riadams,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+137,12128,385,ri - Bartletts Ocean Farms,,,,ribartlett,,Y,ScanMaster,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+138,12248,387,Supervalu,,,,supervaludpn,,N,,Y,,N,N,UNKnown,N,2,Y,N,N
+139,12259,392,Just$ave,,,,justsave,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+140,12265,396,ri - Elk County Foods,,,,rielk,,Y,ScanMaster,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+141,12266,397,ri - Plumbs,,,,riplumbs,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+142,12264,395,ri - Apples Market,,,,riapples,,Y,ScanMaster,Y,,Y,Y,UNKnown,N,1,Y,N,N
+143,12267,398,ri - Toms Food Center,,,,ritoms,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+144,12253,391,Winn-Dixie,,,,winndixie,,N,,N,,N,N,UNKnown,N,2,N,N,N
+145,12251,389,C&K Market's,,,,ckmarket,,N,,N,,N,N,UNKnown,N,2,N,N,N
+146,12250,388,Associated Food Stores,,,,afs,,N,,N,,N,N,UNKnown,Y,2,N,N,N
+147,12252,390,Raley's,,,,raleys,,N,,N,,N,N,UNKnown,Y,2,N,N,N
+148,12274,400,ri - Food Town,,,,rifoodtown,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+149,12275,401,ri - Fresh Air Galaxy,,,,rifreshair,,Y,,Y,,Y,Y,UNKnown,Y,1,Y,N,N
+150,12273,399,ri - Dicks Food Mart,,,,ridicks,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+151,12277,403,ri - Neimans Family Markets,,,,rineimans,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+152,12278,404,ri - Village Market,,,,rivillage,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+153,12276,402,ri - Karns,,,,rikarns,,Y,,Y,,Y,Y,UNKnown,N,2,Y,N,N
+154,12329,409,ri - Mars Super Foods,,,,rimars,,N,,Y,,Y,Y,UNKnown,N,2,Y,N,N
+155,12327,408,INmart,,,,inmart,,Y,,Y,,Y,N,UNKnown,Y,1,Y,N,N
+156,12773,439,Ingles,,,,inglesdpn,,N,,N,,Y,N,UNKnown,Y,2,Y,N,N
+157,12338,413,ri - Hixsons,,,,rihixsons,,Y,ScanMaster,Y,,Y,Y,UNKnown,Y,1,Y,N,N
+158,12339,414,ri - Mega Foods,,,,rimegafoods,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+159,12340,415,ri - Red Front,,,,riredfront,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+160,12341,416,ri - Hollywood Market,,,,rihollywood,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+161,12342,417,ri - Capri IGA,,,,ricapri,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+162,12566,431,Save Mart,,,,savemartdpn,,N,,Y,,N,N,UNKnown,Y,2,Y,N,N
+163,12568,432,Lucky Supermarkets,,,,luckysuper,,N,,Y,,N,N,UNKnown,Y,2,Y,N,N
+164,12518,420,ri - Vics Supermarket,,,,rivics,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+165,12525,421,ri - Milams Markets,,,,rimilams,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+166,12526,422,ri - Bloomfield IGA,,,,ribloomfield,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+167,12527,423,ri - Luekens,,,,riluekens,,Y,,Y,,N,Y,UNKnown,N,1,Y,N,N
+168,12528,424,ri - McKims IGA,,,,rimckims,,Y,,Y,,Y,Y,UNKnown,Y,1,Y,N,N
+169,12529,425,ri - McMakens IGA,,,,rimcmakens,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+170,12530,426,ri - Pinny Food Center,,,,ripinny,,Y,,Y,,Y,Y,UNKnown,N,2,Y,N,N
+171,12531,427,ri - Quality Foods Rib Mountain,,,,ririb,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+172,12532,428,ri - Quality Foods Schofield,,,,rischofield,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+173,12533,429,ri - Quality Foods Wausau Ave,,,,riwausau,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+174,12534,430,ri - Save More Marketplace,,,,risavemore,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+175,12740,433,INmartNCR,,,,inmartncr,,N,,Y,,N,N,UNKnown,Y,2,Y,N,N
+176,12763,434,ri - Bracketts IGA,,,,ribracketts,,Y,,Y,,Y,Y,UNKnown,N,2,Y,N,N
+177,12764,435,ri - Bakers IGA,,,,ribakers,,Y,,Y,,Y,Y,UNKnown,Y,1,Y,N,N
+178,12766,437,ri - Everyday IGA,,,,rieveryday,,Y,,Y,,Y,Y,UNKnown,Y,1,Y,N,N
+179,12765,436,ri - Martins Supermarkets,,,,rimartins,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+180,12779,442,Cub Foods,,,,cub,,N,,N,,N,N,UNKnown,Y,2,Y,N,N
+181,12782,443,ri - Dills Food City,,,,ridills,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+182,12787,444,Farm Fresh,,,,farmfreshdpn,,N,,N,,N,Y,UNKnown,Y,2,Y,N,N
+183,12788,445,Shoppers Food & Pharmacy,,,,shoppers,,N,,N,,N,Y,UNKnown,Y,2,Y,N,N
+184,12789,446,Shop 'n Save,,,,shopnsavedpn,,N,,N,,N,Y,UNKnown,Y,2,Y,N,N
+185,12790,447,Hornbachers,,,,hornbachers,,N,,N,,N,Y,UNKnown,Y,2,Y,N,N
+186,13163,450,Brookshire Brothers,,,,,,,,,,,,,,,,,
+187,13175,451,ri - Natural Grocers,,,,rinatural,,N,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+188,13555,498,Family Dollar,,,,familydollar,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+189,13176,452,ri - Vans IGA - Dillon,,,,rivansdillon,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+190,13177,453,ri - Vans IGA - Evergreen,,,,rivansevergreen,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+191,13178,454,ri - Vans IGA - Forsyth,,,,rivansforsyth,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+192,13179,455,ri - Vans IGA - Great Falls East,,,,rivansgfeast,,Y,,Y,,Y,Y,UNKnown,N,2,Y,N,N
+193,13180,456,ri - Vans IGA - Teeples,,,,rivansteeples,,Y,,Y,,Y,Y,UNKnown,N,2,Y,N,N
+194,13197,458,Bottom Dollar,,,,bottomdollar,,N,,N,,N,N,UNKnown,N,1,N,N,N
+195,13198,459,AWI,,,,awi,,N,,N,,N,N,UNKnown,Y,1,N,N,N
+196,13199,460,Buehler Food Markets,,,,buehlers,,N,,N,,N,N,UNKnown,N,1,N,N,N
+197,13200,461,Harveys Supermarkets,,,,harveys,,N,,N,,N,N,UNKnown,N,1,N,N,N
+198,13201,462,Vons Pavilions,,,,vons_pavilions,,N,,N,,N,N,UNKnown,N,2,N,N,N
+199,13202,463,Randalls Tom Thumb,,,,randalls_tomthumb,,N,,N,,N,N,UNKnown,N,2,N,N,N
+200,13364,464,County Market,,,,cntymkt,,N,,N,,N,Y,UNKnown,N,2,Y,N,N
+201,13366,465,Rainbow Foods,,,,rainbow,,N,,N,,N,Y,UNKnown,Y,2,Y,N,N
+202,13393,466,ri - Archie's IGA,,,,riarchies,,N,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+203,13397,470,ri - Bailey's IGA,,,,ribaileys,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+204,13416,489,ri - deprecated Blanton's IGA,,,,riblanton,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+205,13415,488,ri - Camano Plaza IGA,,,,ricamano,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+206,13414,487,ri - Cedar Village IGA,,,,ricedar,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+207,13396,469,ri - Darrington IGA,,,,ridarrington,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+208,13394,467,ri - Dissmore's IGA Plus,,,,ridissmore,,N,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+209,13395,468,ri - Dodson's IGA,,,,ridodson,,Y,,Y,,Y,Y,UNKnown,N,2,Y,N,N
+210,13413,486,ri - Fife Lake Village Market,,,,rifife,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+211,13412,485,ri - Fischer's Market IGA,,,,rifischersiga,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+212,13411,484,ri - Foodland Juneau IGA,,,,rifljuneau,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+213,13410,483,ri - Gary & Leo's - Conrad,,,,riglconrad,,Y,,Y,,Y,Y,UNKnown,Y,1,Y,N,N
+214,13409,482,ri - Gary & Leo's - Florence,,,,riglflorence,,Y,,Y,,Y,Y,UNKnown,Y,1,Y,N,N
+215,13408,481,ri - Gary & Leo's - Havre,,,,riglhavre,,Y,,Y,,Y,Y,UNKnown,Y,1,Y,N,N
+216,13407,480,ri - IGA Food Cache,,,,rifoodcache,,Y,,Y,,Y,Y,UNKnown,Y,1,Y,N,N
+217,13406,479,ri - Kress IGA Supermarket,,,,rikress,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+218,13405,478,ri - Lockwood IGA,,,,rilockwood,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+219,13404,477,ri - Normandy Park Market,,,,rinormandy,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+220,13403,476,ri - Ocean Shores IGA,,,,riocean,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+221,13402,475,ri - Picchioni's IGA,,,,ripicchioni,,Y,,Y,,Y,Y,UNKnown,Y,1,Y,N,N
+222,13401,474,ri - Rechek's Food Pride,,,,rirechek,,Y,,Y,,Y,Y,UNKnown,Y,1,Y,N,N
+223,13400,473,ri - Reese & Ray's IGA,,,,rireeseray,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+224,13399,472,ri - The Ridge Supermarket IGA,,,,ritheridge,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+225,13398,471,ri - Tryon IGA,,,,ritryon,,N,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+226,13495,491,ri - EC Porter IGA,,,,riecporter,,N,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+227,13496,492,ri - Honey's IGA,,,,rihoney,,N,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+228,13497,493,ri - Jackson's IGA,,,,rijackson,,N,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+229,13498,494,ri - Lynn's Dakotamart,,,,rilynns,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+230,13499,495,ri - Roger's Foodland,,,,rirogers,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+231,13494,490,ri - Tenuta's Food Lane,,,,ritenutas,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+232,13500,496,ri - Westside IGA,,,,riwestside,,N,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+233,13556,499,mcx - CVS,,,,mcxcvs,,N,,N,,N,Y,UNKnown,Y,2,Y,N,N
+234,13557,500,mcx - Walmart,,,,mcxwalmart,,N,,N,,N,Y,UNKnown,Y,2,Y,N,N
+235,13634,501,ri - Doug's Supermarket,,,,ridougs,,Y,,Y,,Y,Y,UNKnown,Y,1,Y,N,N
+236,13635,502,ri - Woodman's Markets,,,,riwoodmans,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+237,13637,503,ri - Ed's Orchard Market,,,,rieds,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+238,13638,504,Schnucks Markets,,,,schnucks,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+240,22305,531,ri - Houchens,,,,rihouchens,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+241,22306,532,ri - Standard Market,,,,ristandard,,Y,,Y,,Y,Y,UNKnown,N,2,Y,N,N
+242,22307,533,ri - Stump's Family Marketplace,,,,ristumps,,Y,,Y,,Y,Y,UNKnown,N,1,Y,N,N
+243,22308,534,ri - Woodruff's Supermarket,,,,riwoodruff,,Y,,Y,,Y,Y,UNKnown,Y,1,Y,N,N
+244,22309,535,ri - MDI Galaxy,,,,rimdigalaxy,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+245,22310,536,ri - MDI IGA,,,,rimdiiga,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+246,22311,537,ri - MDI Piggly Wiggly,,,,rimdipigwig,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+247,22497,550,ri - AHA,,,,riaha,,Y,ISS45v8,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+248,22498,551,ri - Blanton's IGA,,,,riblantoniga,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+249,22514,552,Foods Co,,,,foodsco,,N,,N,,N,N,UNKnown,Y,2,N,N,N
+250,22517,553,Scott's Food and Pharmacy,,,,scotts,,N,,N,,N,N,UNKnown,Y,2,N,N,N
+251,22586,554,ri - Hugo's,,,,rihugos,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+252,22588,555,ri - SpartanNash 4A Group,,,,risn4a,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+253,22596,556,ri - SpartanNash Hitech Group,,,,risnhitech,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+254,22597,557,ri - SpartanNash Network Group,,,,risnnetwork,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+255,22598,558,ri - Riesbeck's Food Markets,,,,ririesbecks,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+257,22738,576,ri - Buehler's Fresh Foods,,,,ribuehlers,,N,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+258,22739,577,ri - Fresh Encounter,,,,rifreshencounter,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+259,22740,578,ri - Harding's,,,,rihardings,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+260,22741,579,ri - Mitchell Grocery,,,,rimitchell,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+261,22742,580,ri - Tadych's Econofoods,,,,ritadychs,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+262,22743,581,ri - Teal's Market,,,,riteals,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+263,22730,574,mcx - Kmart,,,,mcxkmart,,N,,N,,N,Y,UNKnown,Y,2,Y,N,N
+264,22731,575,mcx - Sears,,,,mcxsears,,N,,N,,N,Y,UNKnown,Y,2,Y,N,N
+265,22879,582,ri - Fresh Foods Market,,,,riffm,,Y,,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+266,22880,583,ri - Palmer's,,,,ripalmers,,Y,,Y,,Y,Y,UNKnown,N,2,Y,N,N
+267,13524,497,MCX,,,,mcx,,N,,N,,N,Y,UNKnown,Y,2,Y,N,N
+268,23954,584,ri - Carlie C's IGA,,,,ricarliec,,Y,ISS45v8,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+269,23955,585,ri - Central Market,,,,ricentral,,Y,ISS45v8,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+270,23958,586,Albertsons,,,,albertsons,,N,,N,,N,N,UNKnown,N,1,N,N,N
+271,23959,587,Roundy's,,,,roundys,,N,,N,,N,N,UNKnown,Y,1,N,N,N
+272,24071,588,Fetch Rewards,,,,fetch,,N,,Y,,N,Y,UNKnown,Y,2,Y,N,N
+273,24094,591,FoodMaxx,,,,foodmaxx,,N,,Y,,N,N,UNKnown,Y,2,Y,N,N
+274,24155,592,ri - Polly's Country Market,,,,ripolly,,Y,ISS45v8,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+275,24156,593,ri - Central Grocers,,,,ricentralgrocers,,Y,ISS45,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+276,24249,595,ri - Dierbergs,,,,ridierbergs,,Y,Retalix StoreLine,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+277,24250,596,fred's Pharmacy,,,,freds,,N,,Y,,Y,N,UNKnown,Y,1,Y,N,N
+278,24448,612,ri - Berkot's Super Foods,,,,riberkots,,Y,ISS45v8,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+279,24449,613,ri - Laurel Grocery,,,,rilaurel,,Y,ISS45v8,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+280,24542,617,ri - C&S Wholesale Grocery,,,,ricands,,Y,ISS45v8,Y,Reach Microsite,Y,Y,UNKnown,Y,2,Y,N,N
+281,24622,618,ri - Unified,,,,riunified,,Y,ISS45v8,Y,Reach Microsite,Y,Y,UNKnown,Y,2,Y,N,N
+282,24723,621,ri - Checker's Market,,,,richeckers,,Y,ISS45v8,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+283,24724,622,ri - Northwest Grocers,,,,rinorthwest,,Y,ISS45v8,Y,,Y,Y,UNKnown,Y,2,Y,N,N
+284,25875,634,Flow Automotive,,,,flowauto,,N,,N,,N,Y,UNKnown,Y,2,Y,N,N
+285,25801,628,Stop And Shop,,,,stopandshop,,N,,N,,N,N,UNKnown,N,1,N,N,N
+286,25802,629,Giant Carlilse,,,,giantcarlilse,,N,,N,,N,N,UNKnown,N,1,N,N,N
+287,25803,630,Giant Landover,,,,giantlandover,,N,,N,,N,N,UNKnown,N,1,N,N,N
+288,25822,631,InmartCard,,,,inmartcard,,N,,N,,Y,Y,UNKnown,Y,2,Y,N,N
+289,25829,632,Piggly Wiggly Midwest,,,,pigwigmw,,Y,Retalix StoreLine,Y,Retailer Managed B2C,Y,Y,UNKnown,Y,2,Y,N,N
+290,25859,633,ri - Reasor's,,,,rireasors,,Y,ISS45v8,Y,Reach Microsite,Y,Y,UNKnown,Y,2,Y,N,N
+292,25884,635,Shop n Save East,,,,svsnseast,,N,,Y,,N,Y,UNKnown,Y,2,Y,N,N
+294,26284,636,ri - AGBR,,,,riagbr,,Y,ISS45v8,Y,Retailer Website,Y,Y,UNKnown,Y,2,Y,N,N
+295,26488,637,Butera Markets,,,,butera,,Y,Storeline,Y,Inmar POP code,N,Y,UNKnown,Y,1,Y,N,N
+296,26490,638,ri - North Market,,,,rinorth,,Y,LOC,Y,Inmar API,Y,Y,UNKnown,Y,2,Y,N,N
+297,45852,807,GreenWise,,,,greenwise,,Y,NCR Retalix ISS45 StoreLine v8.45.2000,Y,GreenWise SSO,N,Y,UNKnown,Y,1,Y,Y,N
+298,26703,746,Mariano's Freshmarket,,,,mariano,,N,,N,,N,N,UNKnown,Y,1,N,N,N
+299,26699,742,Metro Market,,,,metromarket,,N,,N,,N,N,UNKnown,Y,1,N,N,N
+300,26702,745,Pick 'n Save,,,,picknsave,,N,,N,,N,N,UNKnown,Y,1,N,N,N
+301,26701,744,Sprouts,,,,sprouts,,N,,N,,N,N,UNKnown,Y,1,N,N,N
+302,26700,743,Fresh Grocer,,,,freshgrocer,,N,,N,,N,N,UNKnown,Y,1,N,N,N
+303,26704,747,Copps,,,,copps,,N,,N,,N,N,UNKnown,Y,1,N,N,N
+304,45603,775,KTA Super Stores,,,,ktasuperstores,,Y,,Y,,N,Y,UNKnown,N,1,Y,N,N
+305,45621,779,ri - KTA Super Stores,,,,riktasuperstores,,Y,ISS45 v8,Y,reach microsite,Y,Y,UNKnown,Y,2,Y,N,N
+306,45653,783,ri - Piggly Wiggly Central,,,,ripwcsc,,Y,LOC,Y,reach microsite,Y,Y,UNKnown,Y,2,Y,N,N
+307,45661,784,Kinney Drug,,,,kinney,,Y,LOC,Y,Kinney Registration System running Inmar Coupon Portal,Y,Y,UNKnown,Y,2,Y,N,N
+308,45777,798,Associated Wholesale Grocer,,,,awg,,N,,N,,N,N,UNKnown,Y,1,N,N,N
+309,45861,810,Giant Tiger Store Ltd.,,,,gianttiger,,Y,PCMS,Y,Retailer site managed,Y,Y,UNKnown,Y,2,Y,Y,N
+311,46108,843,Acme Markets,,,,acme,,N,,N,,N,N,UNKnown,Y,1,N,N,N
+312,46231,853,AmplifyRPM,,,,amplifyrpm,,N,,N,,Y,N,UNKnown,Y,2,Y,N,N
+313,46254,857,ri - Super A,,,,risupera,,Y,ISS45v8,Y,reach microsite,Y,Y,UNKnown,Y,2,Y,N,N
+1569,12345,418,Price Chopper,,,,pricechopperdpn,,Y,,Y,,Y,N,UNKnown,Y,2,Y,N,N
